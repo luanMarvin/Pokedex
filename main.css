@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e9fccf;
+}
+
+header{
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b1fcb3;
+    -webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2); 
+    box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2);
+}
+
+#logo{
+    max-width: 50px;
+    margin-left: 3%;
+}
+
+header h1{
+    margin-left: 2%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
+main{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#pokedex-graph{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+#pokedex-graph div{
+    align-self: center;
+}
+
+#search{
+    align-items: center;
+}
+#selected-pokemon-img{
+    margin: 60px 0;
+    width: 250px;
+}
+
+#pokedex-graph div P{
+    display: inline-block;
+}
+
+button{
+    font-size: 0.8rem;
+    width: 60px;
+    height: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #89fcb3;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    background-color: #d8fcb3;
+    height: 19px;
+    width: 70%;
+}
+
+
+@media (max-width: 600px) {
+    #logo{
+        margin-left: 5%;
+    }
+    header h1{
+        margin-left: 5%;
+    }
+    #selected-pokemon-img{
+        width: 200px;
+    }
+    input{
+        height: 25px;
+    }
+    button{
+        height: 22px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
+    <title>Online Pokédex</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./src/logo.svg" alt="logo">
+        <h1>Pokedex</h1>
+    </header>
+    <main>
+        <div id="pokedex-graph">
+            <div id="search">
+                <input id="pokemon-number" type="number" min="1" max="150" placeholder="#001">
+                <button onclick="searchFromNumber();">Buscar</button>
+                <br><br>
+                <input list="pokemons-names" name="pokemon-name" id="pokemon-name" placeholder="Pokémon Name">
+                <button onclick="searchFromName();">Buscar</button>
+                <datalist id="pokemons-names">
+                <option value="None">
+                </datalist>
+            </div>
+            <div>
+                <img id="selected-pokemon-img" src="./src/logo.svg" alt="pokemon-img">
+            </div>
+            <div>
+                <p id="selected-pokemon-name"></p>
+                <p id="selected-pokemon-id"></p><br>
+                <p id="selected-pokemon-type"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="app.js"></script>
+    </footer>
+</body>
+</html>
